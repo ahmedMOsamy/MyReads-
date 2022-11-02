@@ -4,14 +4,15 @@ import SearchShelf from "./searchShelf"
 import propTypes from 'prop-types';
 import { useState } from "react";
 
-
 const Search =({getBooks,onResetSearch,searchResult, switchShelf,searchLoad})=>{
+ 
   const [search, setSearch] = useState("");
+ 
   const handleSearch = (search)=>{
     setSearch(search.trim());
-
     getBooks(search)
   }
+
   return (
         <div className="search-books">
         <div className="search-books-bar">

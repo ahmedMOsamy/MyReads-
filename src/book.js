@@ -5,6 +5,7 @@ const Book = ({books,switchShelf})=>{
    const updateShelf = (event) =>{
         switchShelf(books,event.target.value)
     }
+    
     return(
 <li>
     <div className="book">
